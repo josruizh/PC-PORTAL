@@ -1,0 +1,178 @@
+/* PC PORTAL - Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+h2 {
+    font-size: 28px;
+}
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Menú */
+.navbar {
+    padding: 16px 0;
+}
+.navbar-brand {
+    font-size: 20px;
+}
+.nav-link {
+    margin-left: 8px;
+}
+.nav-link:hover {
+    color: white;
+}
+
+/* Encabezado */
+#inicio {
+    background-color: #111827;
+    padding: 95px 0;
+}
+#inicio h1 {
+    margin-bottom: 18px;
+}
+#inicio p {
+    margin-bottom: 20px;
+}
+.portada-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Promociones */
+.oferta {
+    min-height: 205px;
+}
+.oferta h3 {
+    font-size: 24px;
+}
+.oferta p {
+    margin-bottom: 18px;
+}
+
+/* Carrusel */
+#carruselPc {
+    max-width: 100%;
+    margin: auto;
+}
+.carrusel-img {
+    height: 380px;
+    object-fit: cover;
+    background-color: #1d1d1d;
+}
+.imagen-entera {
+    object-fit: contain;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    bottom: 22px;
+}
+.carousel-caption h3 {
+    margin: 0;
+}
+
+/* Catálogo */
+#catalogo {
+    scroll-margin-top: 80px;
+}
+.card {
+    border: 1px solid #ddd;
+}
+.card:hover {
+    border-color: #0d6efd;
+}
+.producto-img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background-color: #f7f7f7;
+    padding: 10px;
+}
+.card-body {
+    min-height: 175px;
+}
+.card-body p {
+    margin-bottom: 12px;
+}
+.card .btn {
+    width: 100%;
+}
+
+/* Preguntas frecuentes */
+.accordion-button {
+    font-size: 16px;
+}
+.accordion-body {
+    line-height: 1.6;
+}
+
+/* Pie de página */
+footer a {
+    color: white;
+    font-size: 22px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ffc107;
+}
+
+/* Diseño para tablet */
+@media (max-width: 768px) {
+    #inicio {
+        padding: 65px 0;
+    }
+    #inicio h1 {
+        font-size: 34px;
+    }
+    .portada-img {
+        height: 255px;
+    }
+    .carrusel-img {
+        height: 300px;
+    }
+    .producto-img {
+        height: 170px;
+    }
+}
+
+/* Diseño para celular */
+@media (max-width: 576px) {
+    #inicio {
+        padding: 55px 0;
+        text-align: center;
+    }
+    #inicio h1 {
+        font-size: 29px;
+    }
+    #inicio .lead {
+        font-size: 17px;
+    }
+    .carrusel-img {
+        height: 220px;
+    }
+    .producto-img {
+        height: 140px;
+    }
+    .card-body {
+        padding: 12px;
+        min-height: 185px;
+    }
+    .card-body h3 {
+        font-size: 15px;
+    }
+    .oferta {
+        min-height: auto;
+    }
+    footer {
+        text-align: center;
+    }
+}
